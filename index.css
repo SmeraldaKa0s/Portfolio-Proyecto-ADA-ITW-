@@ -1,0 +1,226 @@
+
+* {
+   
+    margin: 0; 
+    padding: 0;
+    
+    
+  }
+  
+  :root {
+   
+    --negro: rgb(0, 0, 0);
+    --blanco: rgb(240, 240, 240);
+    --primario: rgba(119, 22, 98, 0.842);
+    --primario-hover: #9A14EC;
+    --secundario:rgba(6, 199, 109, 0.486);
+    --secundario-hover: #9914ecc9;
+    --background: rgba(184, 184, 184, 0.685); 
+    
+   
+  }
+  
+  body {
+    font-family: 'Electrolize', sans-serif;
+    background-color: var(--background);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 80px;
+    margin-bottom: 12px;
+    /* font-style: italic; */
+  
+  }
+  
+  h2 {
+    font-family: 'Big Shoulders Display', cursive; ;
+    font-size: 55px;
+  }
+  
+  .navbar {
+   
+    display: flex;
+    background-color: var(--secundario);
+    box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.329);
+    justify-content: flex-end;
+    padding: 2rem;
+    
+  
+  }
+  
+  .list {
+   
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    width: 40rem;
+  }
+  
+  .item-list {
+   
+    box-sizing: border-box;
+    border-radius: 10rem;
+    color: var(--negro);
+    padding: 0.8rem 1.5rem;
+    transition: 200ms;
+    font-size: 16px;
+  }
+  
+  .item-list:hover {
+    background-color: var(--secundario-hover);
+    transition: 200ms;
+  }
+  
+  .item-list:active,
+  .item-list:focus {
+    
+    box-shadow: inset 0 0 0 2px var(--blanco);
+    outline: transparent;
+    transition: 200ms;
+  }
+  
+  .cta {
+    /*
+      En el Call To Action solo agrego la diferencia.
+    */
+    background-color: var(--primario);
+    color: var(--blanco);
+    /* box-shadow: 0px 0px 15px 0px rgba(151, 29, 125, 0.89); */
+    /* margin-left: 1rem; */
+  }
+  
+  .cta:hover {
+    background-color: var(--primario-hover);
+  }
+  
+  
+  .presentacion {
+  
+   
+      padding: 110px 40px 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      
+  }
+  
+   
+  
+   .algoandamal {
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+    
+  
+  .algo {
+    min-width: 500px;
+  
+  }
+  
+
+  .pr {
+  font-size: 35px;
+  
+  }
+  
+  .rp {
+  font-size: 17px;
+  font-style: italic;
+  }
+  
+  /* .preimage {
+  
+  border: 2px solid red; 
+  
+  } */
+  
+  .img { 
+  
+  max-width: 700px;
+    /* border-radius: 200px; */
+    /* border: 2px solid red; */
+   } 
+  
+  .veamos {
+  
+  background-color: #A08AB9;
+    /* border: 1px solid orange; */
+  box-shadow: 0px 0px 15px 0px rgb(126, 21, 103);
+  /* display: flex; */
+  /* align-items: center; */
+  /* border: 2px solid red; */
+  width: 150px;
+  text-align: center;
+  border-radius: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  }
+  
+  .contenedor {
+  
+    padding: 80px 30px 60px;
+    background-color: var(--blanco);
+  
+  }
+  
+  .seccion2 {
+  
+  display:flex;
+  justify-content: center;
+  /* border: 2px solid violet; */
+  flex-direction: column; 
+  align-items: center; 
+  
+  }
+  
+  .secciondos {
+  
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  /* max-width: 1100px;  */
+  /* padding: 80px 40px 130px;  */
+  }
+  
+  .descripcion {
+  max-width: 385px;
+  line-height: 1.5;
+  
+  }
+  
+  .sec {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-top: 40px;
+  } 
+  
+  .pp {
+  
+    display:flex;   
+    justify-content: center;
+    align-items: center;  
+    width: 250px;
+    background-color: #2F2E41;
+    border-radius: 8px;
+    border: 1px solid var(--negro);
+    padding: 30px;
+    margin: 10px;
+       }
+  
+  
