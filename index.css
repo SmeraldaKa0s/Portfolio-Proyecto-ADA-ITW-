@@ -6,17 +6,18 @@
 
 :root {
   --negro: rgb(0, 0, 0);
-  --blanco: rgb(240, 240, 240);
+  --blanco: rgb(255, 255, 255);
   --primario: rgba(119, 22, 98, 0.842);
   --primario-hover: #9a14ec;
   --secundario: rgba(6, 199, 109, 0.486);
   --secundario-hover: #9914ecc9;
   --background: rgba(184, 184, 184, 0.685);
+  --gris: rgb(240, 240, 240);
 }
 
 body {
   font-family: "Electrolize", sans-serif;
-  background-color: var(--background);
+  background-color: var(--blanco);
 }
 
 a {
@@ -41,6 +42,8 @@ h2 {
   box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.329);
   justify-content: flex-end;
   padding: 2rem;
+  position: fixed;
+  width: 100%;
 }
 
 .list {
@@ -76,7 +79,7 @@ h2 {
       En el Call To Action solo agrego la diferencia.
     */
   background-color: var(--primario);
-  color: var(--blanco);
+  color: var(--gris);
   /* box-shadow: 0px 0px 15px 0px rgba(151, 29, 125, 0.89); */
   /* margin-left: 1rem; */
 }
@@ -86,7 +89,7 @@ h2 {
 }
 
 .presentacion {
-  padding: 110px 40px 130px;
+  padding: 230px 40px 210px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,10 +99,6 @@ h2 {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
-}
-
-.algo {
-  min-width: 500px;
 }
 
 .pr {
@@ -118,7 +117,8 @@ h2 {
   } */
 
 .img {
-  max-width: 700px;
+  max-width: 500px;
+  width: 100%;
   /* border-radius: 200px; */
   /* border: 2px solid red; */
 }
@@ -142,10 +142,10 @@ h2 {
 
 .contenedor {
   padding: 130px 30px 130px;
-  background-color: var(--blanco);
+  background-color: var(--gris);
 }
 
-.seccion2 {
+.conocimientos-seccion {
   display: flex;
   justify-content: center;
   /* border: 2px solid violet; */
@@ -160,8 +160,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   /* padding: 80px 40px 130px;  */
-  background-color:  var(--blanco);
-  
+  background-color: var(--gris);
 }
 
 .descripcion {
@@ -178,7 +177,33 @@ h2 {
   margin-top: 40px;
 }
 
-.conocimiento-item {
+.seccion-proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blanco);
+  margin: 130px 0px;
+}
+
+.caja-proyectos {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid violet; */
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.cajas {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.conocimientos div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,24 +266,58 @@ h2 {
   font-size: 40px;
 }
 
-.proyecto-caja {
-  
+.proyectos a {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   border: 2px solid red;
   /* margin: 100px; */
-  width: 320px;
+
   height: 320px;
   overflow: hidden;
   margin: 15px;
   border-radius: 8px;
+  width: calc(100% / 3 - 30px);
 }
 
 .imagen-proyecto {
-
   width: 100%;
+}
 
+.avergabriel {
+  width: 100%;
+  max-width: 1100px;
+}
 
+.caja-proyectos p {
+  margin: 16px 0px;
+}
+
+.conocimiento-item:hover {
+  border: 3px solid var(--secundario);
+  /* transition: 200ms; */
+}
+
+#projects, #skills, #contact {
+  padding-top: 100px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    display: none;
+  }
+  .presentacion {
+    flex-direction: column;
+    padding: 70px 40px;
+  }
+
+  .img {
+    margin: 130px 0px;
+    max-width: 400px;
+  }
+
+  .proyectos a {
+    width: calc(100% / 2 - 30px);
+  }
 }
