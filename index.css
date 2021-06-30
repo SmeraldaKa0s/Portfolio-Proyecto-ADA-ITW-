@@ -7,16 +7,18 @@
 :root {
   --negro: rgb(0, 0, 0);
   --blanco: rgb(255, 255, 255);
-  --primario: rgba(119, 22, 98, 0.842);
+  --primario: #7C007C;
   --primario-hover: #9a14ec;
-  --secundario: rgba(6, 199, 109, 0.486);
-  --secundario-hover: #9914ecc9;
+  --secundario: #13886F;
+  --secundario-hover: #9B00FF;
   --background: rgba(184, 184, 184, 0.685);
   --gris: rgb(240, 240, 240);
+  --terciario: #2f2e41; 
 }
 
 body {
   font-family: "Electrolize", sans-serif;
+  /* font-family: 'Russo One', sans-serif; */
   background-color: var(--blanco);
 }
 
@@ -26,22 +28,24 @@ a {
 
 h1 {
   font-family: "Big Shoulders Display", cursive;
-  font-size: 80px;
+  /* font-family: 'Russo One', sans-serif; */
+  font-size: 90px;
   margin-bottom: 12px;
   /* font-style: italic; */
 }
 
 h2 {
-  font-family: "Big Shoulders Display", cursive;
+  
+  font-family: 'Russo One', sans-serif;
   font-size: 55px;
 }
 
 .navbar {
   display: flex;
-  background-color: var(--secundario);
-  box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.329);
+  background-color: var(--negro);
+  box-shadow: 5px 0 15px 0 var(--secundario);
   justify-content: flex-end;
-  padding: 2rem;
+  padding: 32px;
   position: fixed;
   width: 100%;
 }
@@ -56,15 +60,16 @@ h2 {
 .item-list {
   box-sizing: border-box;
   border-radius: 10rem;
-  color: var(--negro);
+  color: var(--blanco);
   padding: 0.8rem 1.5rem;
   transition: 200ms;
-  font-size: 16px;
+  font-size: 15px;
+  font-family: 'Russo One', sans-serif;
 }
 
 .item-list:hover {
   background-color: var(--secundario-hover);
-  transition: 200ms;
+  transition: 150ms;
 }
 
 .item-list:active,
@@ -79,19 +84,25 @@ h2 {
       En el Call To Action solo agrego la diferencia.
     */
   background-color: var(--primario);
-  color: var(--gris);
+  /* color: var(--gris); */
   /* box-shadow: 0px 0px 15px 0px rgba(151, 29, 125, 0.89); */
   /* margin-left: 1rem; */
 }
 
 .cta:hover {
   background-color: var(--primario-hover);
+  
+}
+
+.cta:focus {
+  box-shadow: 0px 0px 10px 1px var(--secundario-hover)
+
 }
 
 .presentacion {
-  padding: 230px 40px 210px;
+  padding: 165px 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -103,18 +114,20 @@ h2 {
 
 .pr {
   font-size: 35px;
+ 
 }
 
 .rp {
   font-size: 17px;
   font-style: italic;
+  
 }
 
-/* .preimage {
-  CSS
+ /* .preimage {
+  
   border: 2px solid red; 
   
-  } */
+  }  */
 
 .img {
   max-width: 500px;
@@ -124,24 +137,32 @@ h2 {
 }
 
 .veamos {
-  background-color: #a08ab9;
-  /* border: 1px solid orange; */
-  box-shadow: 0px 0px 15px 0px rgb(126, 21, 103);
+  background-color: var(--primario);
   /* display: flex; */
   /* align-items: center; */
   /* border: 2px solid red; */
   width: 150px;
-  text-align: center;
   border-radius: 20px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  color: var(--blanco);
+  font-family: 'Russo One', sans-serif;
+  font-size: 15px;
+  
+}
+
+.veamos:focus {
+
+  box-shadow: inset 0 0 0 2px var(--negro);
+  outline: transparent;
+  transition: 200ms;
 }
 
 .contenedor {
-  padding: 130px 30px 130px;
+  padding: 70px 0px 90px;
   background-color: var(--gris);
 }
 
@@ -167,6 +188,7 @@ h2 {
   max-width: 501px;
   line-height: 1.5;
   font-size: 20px;
+  padding: 30px 0px 5px;
 }
 
 .sec {
@@ -214,6 +236,8 @@ h2 {
   border: 1px solid var(--negro);
   padding: 30px;
   margin: 10px;
+  transition: 200ms;
+  color: white; 
 }
 
 .fab {
@@ -247,8 +271,9 @@ h2 {
 }
 
 .tekno {
-  font-size: 30px;
+  font-size: 23px;
   font-weight: 200;
+  /* color: var(--blanco); */
 }
 
 .conteiner {
@@ -271,18 +296,37 @@ h2 {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  border: 2px solid red;
+  border: 1px solid rgba(184, 184, 184, 0.685);
   /* margin: 100px; */
 
   height: 320px;
   overflow: hidden;
-  margin: 15px;
+  margin: 10px;
   border-radius: 8px;
   width: calc(100% / 3 - 30px);
 }
 
+.proyectos a:hover {
+  border: 1px solid var(--secundario-hover);
+  /* transition: 200ms; */
+  color: var(--secundario-hover);
+}
+
+.proyectos a:focus {
+    box-shadow: 0px 0px 7px var(--secundario-hover);
+}
+
+
+.proyectos p {
+
+color: var(--terciario);
+font-size: 23px;
+}
+
 .imagen-proyecto {
   width: 100%;
+  height: 210px;
+  padding-bottom: 33px;
 }
 
 .avergabriel {
@@ -291,13 +335,16 @@ h2 {
 }
 
 .caja-proyectos p {
-  margin: 16px 0px;
+  margin: 30px 0px;
 }
 
 .conocimiento-item:hover {
-  border: 3px solid var(--secundario);
+  border: 1px solid var(--secundario-hover);
   /* transition: 200ms; */
+  color: var(--secundario-hover);
 }
+
+
 
 #projects, #skills, #contact {
   padding-top: 100px;
@@ -321,3 +368,4 @@ h2 {
     width: calc(100% / 2 - 30px);
   }
 }
+
