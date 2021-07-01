@@ -388,6 +388,7 @@ font-size: 23px;
   /* max-width: 1100px; */
   /* margin: auto; */
   justify-content: space-evenly;
+  background-color: var(--blanco);
 
 
 }
@@ -455,4 +456,11 @@ color: var(--secundario);
 
   box-shadow: 0px 0px 33px #8338ec;
   outline: 0;
+}
+
+.form {
+
+display: flex;
+flex-direction: column;
+
 }
