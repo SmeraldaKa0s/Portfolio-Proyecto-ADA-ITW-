@@ -71,7 +71,7 @@
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     </p>
                     <p>
-                        <a href="#projects" class="veamos cta">LO QUE HAGO</a>
+                        <a href="#projects" class="boton-sobre-mi cta">LO QUE HAGO</a>
                     </p>
                 </div>
 
@@ -215,7 +215,7 @@
         <section class="contenedor">
             <div class="contenedor-contacto">
 
-                <section>
+                <section class="seccion-contactame">
                     <div class="contactame">
 
                         <h2 id="contact">Contactame</h2>
@@ -227,7 +227,7 @@
                             numquam eligendi.</p>
 
                     </div>
-                    <!-- <div> -->
+                    <div class="contenedor-lista-contacto">
                     <ul class="lista-contacto">
 
                         <li class="contacto-redes">
@@ -257,7 +257,7 @@
 
 
                     </ul>
-                    <!-- </div> -->
+                    </div>
                 </section>
 
                 <section class="contenedor-formulario">
@@ -268,25 +268,31 @@
                             <div class="cajas-formulario">
                                 <div class="item-formulario">
                                     <label>Nombre*
-                                        <input type="text" required="required" placeholder="p. ej.:Poison">
+                                        <input type="text" name="Nombre" required="required" placeholder="p. ej.:Poison">
                                     </label>
                                 </div>
-                                <div class="item-formulario">
+                                <div>
                                     <label>Apellido*
-                                        <input type="text" required="required" placeholder="p. ej.: Ivy">
+                                        <input type="text" name="Apellido" required="required" placeholder="p. ej.: Ivy">
                                     </label>
                                 </div>
-                                <div class="item-formulario">
-                                    <label>Email*
-                                        <input type="email" required="required" placeholder="poison.ivy@gmail.com">
-                                    </label>
-                                </div>
-
                             </div>
-                            <label>Mensaje*
-                                <textarea cols="30" row="15" required="required"
+
+                            <div>
+                                <div>
+                                    <label>
+                                        <p>Email*</p>
+                                        <input type="email" name="Email"  required="required" placeholder="p. ej.:poison.ivy@gmail.com">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <label>
+                                <p>Mensaje*</p>
+                                <textarea cols="30" row="15" name="Mensaje" required="required"
                                     placeholder="Escriba un mensaje aquí"></textarea>
-                                <button type="submit" class="send-form">Enviar</button>
+
+                                <button type="submit" name="Enviar" class="send-form cta">Enviar</button>
                             </label>
 
                         </form>

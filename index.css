@@ -15,20 +15,12 @@
   --background: rgba(184, 184, 184, 0.685);
   --gris: rgb(240, 240, 240);
   --terciario: #2f2e41; 
+  --seleccion: rgb(245, 187, 187);
+
 }
 
-/* body::-webkit-scrollbar {
-  width: 4px;
-}
- 
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0px 0px 2px var(--secundario);
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: var(--secundario);
-  outline: 2px solid var(--secundario-hover);
-} */
+
+/* Estilo Scrollbar */
 
 body::-webkit-scrollbar {
   width: 10px;
@@ -48,7 +40,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 body {
   font-family: "Electrolize", sans-serif;
-  /* font-family: 'Russo One', sans-serif; */
   background-color: var(--blanco);
   font-size: 17px;
 }
@@ -59,10 +50,9 @@ a {
 
 h1 {
   font-family: "Big Shoulders Display", cursive;
-  /* font-family: 'Russo One', sans-serif; */
   font-size: 90px;
   margin-bottom: 12px;
-  /* font-style: italic; */
+  
 }
 
 h2 {
@@ -70,6 +60,11 @@ h2 {
   font-family: 'Russo One', sans-serif;
   font-size: 55px;
 }
+
+p::selection {
+background-color: var(--seleccion);
+
+} 
 
 .navbar {
   display: flex;
@@ -84,14 +79,14 @@ h2 {
 .list {
   display: flex;
   justify-content: space-between;
-  width: 40rem;
+  width: 640px;
 }
 
 .item-list {
   box-sizing: border-box;
-  border-radius: 10rem;
-  color: var(--blanco);
-  padding: 0.8rem 1.5rem;
+  border-radius: 160px;
+  color: var(--gris);
+  padding: 12px 25px;
   transition: 200ms;
   font-size: 15px;
   font-family: 'Russo One', sans-serif;
@@ -114,9 +109,7 @@ h2 {
       En el Call To Action solo agrego la diferencia.
     */
   background-color: var(--primario);
-  /* color: var(--gris); */
-  /* box-shadow: 0px 0px 15px 0px rgba(151, 29, 125, 0.89); */
-  /* margin-left: 1rem; */
+  
 }
 
 .cta:hover {
@@ -162,17 +155,13 @@ h2 {
 .img {
   max-width: 500px;
   width: 100%;
-  /* border-radius: 200px; */
-  /* border: 2px solid red; */
+ 
 }
 
-.veamos {
+.boton-sobre-mi {
   background-color: var(--primario);
-  /* display: flex; */
-  /* align-items: center; */
-  /* border: 2px solid red; */
   width: 150px;
-  border-radius: 20px;
+  border-radius: 160px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -184,9 +173,9 @@ h2 {
   
 }
 
-.veamos:focus {
+.boton-sobre-mi:focus {
 
-  box-shadow: inset 0 0 0 2px var(--negro);
+  box-shadow: inset 0 0 5px 2px var(--background);
   outline: transparent;
   transition: 200ms;
 }
@@ -194,12 +183,13 @@ h2 {
 .contenedor {
   padding: 70px 0px 90px;
   background-color: var(--gris);
+  display: flex;
+  justify-content: center;
 }
 
 .conocimientos-seccion {
   display: flex;
   justify-content: center;
-  /* border: 2px solid violet; */
   flex-direction: column;
   align-items: center;
   max-width: 1100px;
@@ -239,7 +229,6 @@ h2 {
 .caja-proyectos {
   display: flex;
   justify-content: center;
-  /* border: 2px solid violet; */
   flex-direction: column;
   align-items: center;
   max-width: 1100px;
@@ -401,12 +390,17 @@ font-size: 23px;
 
 .contenedor-contacto {
   display: flex;
-  border: 2px solid violet;
-  /* max-width: 1100px; */
+  border: 1px solid var(--background) ;
+  max-width: 1100px;
   /* margin: auto; */
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: var(--blanco);
+  padding: 0px 50px 70px;
+}
 
+.seccion-contactame {
+
+padding-right: 150px;
 
 }
 
@@ -415,9 +409,6 @@ font-size: 23px;
 display: flex;
 flex-direction: column;
 padding-right: 15px;
-/* align-items: center; */
-/* justify-content: space-evenly; */
-
 }
 
 .parrafo-contacto {
@@ -426,6 +417,11 @@ padding-right: 15px;
   line-height: 1.5;
   font-size: 17px;
   padding-top: 30px;
+
+}
+
+.contenedor-lista-contacto {
+width: 242px;
 
 }
 
@@ -458,12 +454,6 @@ padding-right: 15px;
   margin: 0px 10px 0px 15px;
   transition: 250ms; 
   /* border-radius: 50px;  */
-
-  
-  
-  
-  
-  
 
 
 } 
@@ -504,12 +494,65 @@ flex-direction: column;
 .cajas-formulario {
 
   display:flex;
-  justify-content: space-evenly;
+  /* justify-content: flex-start; */
+  /* flex-wrap: wrap; */
+  padding-top: 30px;
 }
 
 .item-formulario {
 
-  align-items: center;
-
+margin-right: 5px;
+  /* width: 100%; */
+  /* align-items: center; */
 
 }
+
+/* .caja-formulario .item-formulario:nth-of-type(1) {
+
+  margin-right: 15px; 
+}
+  
+.caja-formulario .item-formulario:nth-of-type(2) {
+  margin-left: 15px;
+ }
+   */
+
+   input, textarea {
+    border: 0; 
+    border-radius: 100px;
+    outline: none;
+    margin: 15px 0px;
+    padding: 10px 0px 10px 13px;
+    font-size: 17px;
+    width: 100%;
+   }
+
+   input:focus {
+   box-shadow: 0px 0px 5px 1px var(--terciario);
+   }
+
+   textarea:focus {
+    box-shadow: 0px 0px 5px 1px var(--terciario);
+
+   }
+
+   .send-form {
+     border: 0;
+outline:none;
+    background-color: var(--primario);
+    /* display: flex; */
+    /* align-items: center; */
+    /* border: 2px solid red; */
+    width: 150px;
+    border-radius: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 18px;
+    color: var(--negro);
+    font-family: 'Russo One', sans-serif;
+
+
+   }
