@@ -13,9 +13,9 @@
   --secundario: #13886F;
   --secundario-hover: #9B00FF;
   --background: rgba(184, 184, 184, 0.685);
-  --gris: rgb(240, 240, 240);
+  --gris: rgb(235, 235, 235);
   --terciario: #2f2e41; 
-  --seleccion: rgb(245, 187, 187);
+  --seleccion: rgba(245, 187, 187, 0.445);
 
 }
 
@@ -167,7 +167,7 @@ background-color: var(--seleccion);
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-  color: var(--blanco);
+  color: var(--gris);
   font-family: 'Russo One', sans-serif;
   font-size: 15px;
   
@@ -250,7 +250,7 @@ background-color: var(--seleccion);
   justify-content: center;
   align-items: center;
   width: 260px;
-  background-color: #2f2e41;
+  background-color: var(--terciario);
   border-radius: 8px;
   border: 1px solid var(--negro);
   padding: 30px;
@@ -323,6 +323,7 @@ background-color: var(--seleccion);
   margin: 10px;
   border-radius: 8px;
   width: calc(100% / 3 - 30px);
+  outline:none; 
 }
 
 .proyectos a:hover {
@@ -396,6 +397,7 @@ font-size: 23px;
   justify-content: space-around;
   background-color: var(--blanco);
   padding: 0px 50px 70px;
+  border-radius: 15px;
 }
 
 .seccion-contactame {
@@ -444,6 +446,7 @@ width: 242px;
   align-items: center;
   padding: 10px 0px;
   color: var(--negro);
+  outline:none; 
 }
 
 .icon {
@@ -525,20 +528,31 @@ margin-right: 5px;
     padding: 10px 0px 10px 13px;
     font-size: 17px;
     width: 100%;
+    background-color: var(--gris);
+    
+
    }
 
    input:focus {
    box-shadow: 0px 0px 5px 1px var(--terciario);
+   background-color: var(--seleccion);
    }
 
    textarea:focus {
     box-shadow: 0px 0px 5px 1px var(--terciario);
+    background-color: var(--seleccion);
 
    }
 
+   /* .item-mensaje {
+
+    width: 400px;
+    height: 90;
+   } */
+
    .send-form {
-     border: 0;
-outline:none;
+   border: 0;
+    outline:none;
     background-color: var(--primario);
     /* display: flex; */
     /* align-items: center; */
@@ -554,5 +568,30 @@ outline:none;
     color: var(--negro);
     font-family: 'Russo One', sans-serif;
 
+   }
+/* 
+   .footer-navbar { 
+ display: flex;
+/* justify-content:center;  */
 
+  /* }  */
+
+   .contenedor-navbar {
+
+display:flex;
+justify-content: center;
+
+   }
+
+   .lista-navbar {
+display: flex;
+justify-content: center;
+
+   }
+
+   .algo {
+
+    display:flex;
+    justify-content: center;
+    
    }
