@@ -279,7 +279,7 @@ p::selection {
 }
 
 .conteiner {
-  padding: 100px;
+  padding: 100px 0px 100px 0px;
   background-color: var(--primario-hover);
 }
 
@@ -716,6 +716,21 @@ margin-bottom: 150px;
 
 }
 
+p, h2 {
+padding: 0;
+
 }
 
+}
+
+@media (max-width: 460px) {
+
+p, h2 {
+
+  text-align: center;
+}
+
+
+
+}
 
