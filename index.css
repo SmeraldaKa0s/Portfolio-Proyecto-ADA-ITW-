@@ -34,6 +34,10 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: inset 4px 0 4px 0 rgb(0 0 0 / 30%);
 }
 
+
+
+
+
 body {
   font-family: "Electrolize", sans-serif;
   background-color: var(--blanco);
@@ -98,9 +102,6 @@ p::selection {
 }
 
 .cta {
-  /*
-      En el Call To Action solo agrego la diferencia.
-    */
   background-color: var(--primario);
 }
 
@@ -133,12 +134,6 @@ p::selection {
   font-size: 17px;
   font-style: italic;
 }
-
-/* .preimage {
-  
-  border: 2px solid red; 
-  
-  }  */
 
 .img {
   max-width: 500px;
@@ -185,7 +180,6 @@ p::selection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 80px 40px 130px;  */
   background-color: var(--gris);
 }
 
@@ -239,7 +233,7 @@ p::selection {
   padding: 30px;
   margin: 10px;
   transition: 200ms;
-  color: white;
+  color: var(--blanco);
 }
 
 .icono {
@@ -275,7 +269,6 @@ p::selection {
 .tekno {
   font-size: 23px;
   font-weight: 200;
-  /* color: var(--blanco); */
 }
 
 .conteiner {
@@ -298,9 +291,7 @@ p::selection {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  border: 1px solid rgba(184, 184, 184, 0.685);
-  /* margin: 100px; */
-
+  border: 1px solid var(--background);
   height: 320px;
   overflow: hidden;
   margin: 10px;
@@ -311,7 +302,7 @@ p::selection {
 
 .proyectos a:hover {
   border: 1px solid var(--secundario-hover);
-  /* transition: 200ms; */
+  transition: 200ms; 
   color: var(--secundario-hover);
 }
 
