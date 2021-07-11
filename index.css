@@ -8,13 +8,13 @@
 :root {
   --negro: rgb(0, 0, 0);
   --blanco: rgb(255, 255, 255);
-  --primario: #7c007c;
-  --primario-hover: #9a14ec;
-  --secundario: #13886f;
-  --secundario-hover: #9b00ff;
+  --primario: rgb(124, 0, 124);
+  --primario-hover: rgb(154, 20, 236);
+  --secundario: rgb(19, 136, 111);
+  --secundario-hover: rgb(155, 0, 255);
   --background: rgba(184, 184, 184, 0.685);
   --gris: rgb(235, 235, 235);
-  --terciario: #2f2e41;
+  --terciario: rgb(47, 46, 65);
   --seleccion: rgba(245, 187, 187, 0.445);
 }
 
@@ -26,17 +26,12 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--secundario);
-  /* outline: 2px solid var(--secundario-hover); */
   box-shadow: inset 4px 0 4px 0 rgb(0 0 0 / 25%);
 }
 body::-webkit-scrollbar-thumb:hover {
   background-color: var(--secundario-hover);
   box-shadow: inset 4px 0 4px 0 rgb(0 0 0 / 30%);
 }
-
-
-
-
 
 body {
   font-family: "Electrolize", sans-serif;
@@ -79,7 +74,7 @@ p::selection {
   width: 640px;
 }
 
-.item-list {
+.item-list-navbar {
   box-sizing: border-box;
   border-radius: 160px;
   color: var(--gris);
@@ -89,13 +84,13 @@ p::selection {
   font-family: "Russo One", sans-serif;
 }
 
-.item-list:hover {
+.item-list-navbar:hover {
   background-color: var(--secundario-hover);
   transition: 150ms;
 }
 
-.item-list:active,
-.item-list:focus {
+.item-list-navbar:active,
+.item-list-navbar:focus {
   box-shadow: inset 0 0 0 2px var(--blanco);
   outline: transparent;
   transition: 200ms;
@@ -113,29 +108,28 @@ p::selection {
   box-shadow: 0px 0px 10px 1px var(--secundario-hover);
 }
 
-.presentacion {
+.contenedor-presentacion {
   padding: 165px 0px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.algoandamal {
+.caja-presentacion {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
 }
 
-.pr {
+.parrafo-presentacion {
   font-size: 35px;
 }
 
-.rp {
-  font-size: 17px;
+.parrafo-presentacion2 {
   font-style: italic;
 }
 
-.img {
+.img-presentacion {
   max-width: 500px;
   width: 100%;
 }
@@ -184,9 +178,7 @@ p::selection {
 }
 
 .descripcion-titulo::selection {
-
-background-color: var(--seleccion);
-
+  background-color: var(--seleccion);
 }
 
 .descripcion-parrafo {
@@ -196,7 +188,7 @@ background-color: var(--seleccion);
   text-align: center;
 }
 
-.sec {
+.caja-conocimiento {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,12 +265,12 @@ background-color: var(--seleccion);
   color: #f34f29;
 }
 
-.tekno {
+.parrafo-conocimiento {
   font-size: 23px;
   font-weight: 200;
 }
 
-.conteiner {
+.contenedor-cita {
   padding: 100px 0px 100px 0px;
   background-color: var(--primario-hover);
 }
@@ -309,7 +301,7 @@ background-color: var(--seleccion);
 
 .proyectos a:hover {
   border: 1px solid var(--secundario-hover);
-  transition: 200ms; 
+  transition: 200ms;
   color: var(--secundario-hover);
 }
 
@@ -318,7 +310,6 @@ background-color: var(--seleccion);
 }
 
 .proyectos p {
-  /* color: var(--terciario); si comento esto me funciona el hover :( */
   font-size: 23px;
 }
 
@@ -328,18 +319,13 @@ background-color: var(--seleccion);
   padding-bottom: 33px;
 }
 
-.avergabriel {
+.contenedor-proyectos {
   width: 100%;
   max-width: 1100px;
 }
 
-/* .caja-proyectos p {
-  margin: 30px 0px;
-} */
-
 .conocimiento-item:hover {
   border: 1px solid var(--secundario-hover);
-  /* transition: 200ms; */
   color: var(--secundario-hover);
 }
 
@@ -353,7 +339,6 @@ background-color: var(--seleccion);
   display: flex;
   border: 1px solid var(--background);
   max-width: 1100px;
-  /* margin: auto; */
   justify-content: space-around;
   background-color: var(--blanco);
   padding: 0px 50px 70px;
@@ -364,7 +349,7 @@ background-color: var(--seleccion);
   padding-right: 150px;
 }
 
-.contactame {
+.contactame-caja {
   display: flex;
   flex-direction: column;
   padding-right: 15px;
@@ -378,7 +363,6 @@ background-color: var(--seleccion);
 }
 
 .contenedor-lista-contacto {
-  /* width: 242px; */
   display: flex;
 }
 
@@ -388,7 +372,6 @@ background-color: var(--seleccion);
 
 .contacto-redes {
   display: flex;
-  /* margin: 5px 0;  */
 }
 
 .contacto-icon {
@@ -420,9 +403,6 @@ background-color: var(--seleccion);
 .contacto-icon:hover .icon {
   background-color: var(--secundario);
   color: var(--negro);
-
-  /* width: 32px;
-  height: 32px; */
 }
 
 .contacto-icon:focus {
@@ -432,38 +412,21 @@ background-color: var(--seleccion);
   padding-right: 32px;
 }
 
-/* .contenedor-formulario {
-  display: flex;
-} */
-
 .form {
   display: flex;
   flex-direction: column;
-  padding: 0px 5px; 
+  padding: 0px 5px;
 }
 
 .cajas-formulario {
   display: flex;
-  /* justify-content: flex-start; */
-  /* flex-wrap: wrap; */
   padding-top: 30px;
 }
 
 .item-formulario {
   margin-right: 5px;
   width: 100%;
-  /* align-items: center; */
 }
-
-/* .caja-formulario .item-formulario:nth-of-type(1) {
-
-  margin-right: 15px; 
-}
-  
-.caja-formulario .item-formulario:nth-of-type(2) {
-  margin-left: 15px;
-}
-   */
 
 input {
   border: 0;
@@ -497,19 +460,10 @@ textarea:focus {
   background-color: var(--seleccion);
 }
 
-/* .item-mensaje {
-
-    width: 400px;
-    height: 90;
-   } */
-
 .send-form {
   border: 0;
   outline: transparent;
   background-color: var(--primario);
-  /* display: flex; */
-  /* align-items: center; */
-  /* border: 2px solid red; */
   width: 150px;
   border-radius: 160px;
   height: 50px;
@@ -533,13 +487,10 @@ textarea:valid:not(:placeholder-shown) {
 }
 
 footer {
-  /* box-shadow: 5px 0 15px 0 var(--secundario); */
   padding: 75px 0px 45px;
 }
 
 .footer-navbar {
-  /* display: flex;
-justify-content:center;   */
   background-color: var(--negro);
   font-family: "Russo One", sans-serif;
 }
@@ -550,13 +501,13 @@ justify-content:center;   */
   color: var(--negro);
   outline: transparent;
 }
-
+/* 
 .lista-navbar {
   display: flex;
   justify-content: center;
-}
+} */
 
-.algo {
+.caja-lista {
   display: flex;
   justify-content: center;
   color: var(--blanco);
@@ -564,7 +515,7 @@ justify-content:center;   */
   outline: transparent;
 }
 
-.algo:focus {
+.caja-lista:focus {
   box-shadow: inset 0 0 5px 1px var(--secundario);
   transition: 200ms;
 }
@@ -612,11 +563,13 @@ justify-content:center;   */
   outline: none;
 }
 
+/* Seccion Responsive  */
+
 @media (max-width: 900px) {
   .navbar {
     display: none;
   }
-  .presentacion {
+  .contenedor-presentacion {
     flex-direction: column;
     padding: 70px 40px;
   }
@@ -632,7 +585,7 @@ justify-content:center;   */
 
   .contenedor-contacto {
     flex-direction: column;
-    border: none;  
+    border: none;
   }
 
   #contact {
@@ -654,40 +607,38 @@ justify-content:center;   */
   .contenedor {
     padding: 0 0 150px;
   }
-
 }
 
 @media (max-width: 600px) {
-.contenedor-navbar {
-display:none; 
-} 
-
-
-.contenedor-contacto {
-  padding: 0 5px;
+  .contenedor-navbar {
+    display: none;
   }
 
-.contenedor {
-padding: 0; 
-}  
+  .contenedor-contacto {
+    padding: 0 5px;
+  }
 
-.sec {
-  margin-bottom: 100px;
+  .contenedor {
+    padding: 0;
+  }
+
+  .sec {
+    margin-bottom: 100px;
+  }
+
+  .descripcion {
+    padding: 15px;
+  }
+
+  p,
+  h2 {
+    padding: 15px;
+  }
+
+  .send-form {
+    margin: 10px 0 60px 0;
+  }
 }
-
-.descripcion {
-padding: 15px;
-}
-
-p, h2 {
-padding: 15px;
-
-}
-
-.send-form {
-  margin: 10px 0 60px 0; 
-}
-} 
 
 @media (max-width: 560px) {
   .proyectos a {
@@ -699,55 +650,44 @@ padding: 15px;
   }
 
   h2 {
-font-size: 45px;  
+    font-size: 45px;
   }
-
-
 }
 
 @media (max-width: 500px) {
+  .cajas-formulario {
+    flex-direction: column;
+  }
 
-.cajas-formulario {
-flex-direction: column;
+  .contactame {
+    padding: 0;
+  }
 
-}
+  .send-form {
+    margin-bottom: 150px;
+  }
 
-.contactame {
-padding: 0;
-}
-
-.send-form {
-margin-bottom: 150px;
-}
-
- p, h2 {
-padding: 0;
-} 
-
+  p,
+  h2 {
+    padding: 0;
+  }
 }
 
 @media (max-width: 460px) {
+  .descripcion-titulo {
+    text-align: center;
+  }
 
-.descripcion-titulo {
-  text-align: center;
-}
-
-.descripcion-parrafo {
-text-align: center;
-
-}
-
+  .descripcion-parrafo {
+    text-align: center;
+  }
 }
 
 @media (max-width: 340px) {
-
-h1 {
-  font-size: 80px; 
-}
+  h1 {
+    font-size: 80px;
+  }
   h2 {
-font-size: 40px;
+    font-size: 40px;
+  }
 }
-
-
-}
-

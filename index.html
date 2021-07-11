@@ -6,10 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Portfolio ADA</title>
+    <title>Portfolio Alexandra</title>
 
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        preload="" />
+
+    <!-- CSS -->
+    <link href="index.css" rel="stylesheet" />
+
+    <!-- Fabicon  -->
     <link href="petalos.ico" rel="shortcut icon">
 
+
+    <!-- Fonts utilizadas  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&display=swap"
@@ -28,14 +38,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-        preload="" />
-
-
-
-
-    <link href="index.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -44,16 +46,16 @@
     <nav class="navbar">
         <ul class="list">
             <li>
-                <a class="item-list" href="#about">SOBRE MÍ</a>
+                <a class="item-list-navbar" href="#about">SOBRE MÍ</a>
             </li>
             <li>
-                <a class="item-list" href="#skills">CONOCIMIENTOS</a>
+                <a class="item-list-navbar" href="#skills">CONOCIMIENTOS</a>
             </li>
             <li>
-                <a class="item-list" href="#projects">PROYECTOS</a>
+                <a class="item-list-navbar" href="#projects">PROYECTOS</a>
             </li>
             <li>
-                <a class="item-list cta" href="#contact">CONTACTO</a>
+                <a class="item-list-navbar cta" href="#contact">CONTACTO</a>
             </li>
         </ul>
     </nav>
@@ -62,26 +64,27 @@
 
     <header>
         <section id="about">
-            <div class="presentacion">
-                <div class="algoandamal">
-                    <p class="pr">¡Hola! Soy</p>
+            <div class="contenedor-presentacion">
+                <div class="caja-presentacion">
+                    <p class="parrafo-presentacion">¡Hola! Soy</p>
 
                     <h1>Alexandra</h1>
-                    <p class="rp">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    <p class="parrafo-presentacion2">
+                        Desarrolladora Frontend y Bibliotecaria 
                     </p>
                     <p>
                         <a href="#projects" class="boton-sobre-mi cta">LO QUE HAGO</a>
                     </p>
                 </div>
 
-                <div class="preimage">
-                    <img class="img" src="fonndo.svg" alt="" />
-                    <!-- <img  class="img" src="girlinthewood.svg" alt=""> -->
+                <div>
+                    <img class="img-presentacion" src="fonndo.svg" alt="Mujer parada mirando hacia adelante" />
                 </div>
             </div>
         </section>
     </header>
+    <!-- Final Seccion sobre mi-->
+
 
     <!-- Seccion Mis Conocimientos-->
 
@@ -89,78 +92,79 @@
         <section class="contenedor">
             <div class="conocimientos-seccion">
                 <div class="secciondos">
-                    <h2 id="skills" class="descripcion-titulo" >Mis Conocimientos</h2>
+                    <h2 id="skills" class="descripcion-titulo">Mis Conocimientos</h2>
                     <p class="descripcion-parrafo">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                        eaque neque molestias consequuntur vel ab quas architecto.
+                        Estas son las skills que estoy desarrollando en este momento: 
                     </p>
                 </div>
 
-                <div class="sec conocimientos">
+                <div class="caja-conocimiento conocimientos">
                     <div class="conocimiento-item">
-                        <i class="fab fa-html5 icono"></i>
+                        <i class="fab fa-html5 icono" aria-label="logo html5"></i>
 
-                        <p class="tekno">HTML 5</p>
+                        <p class="parrafo-conocimiento">HTML 5</p>
                     </div>
                     <div class="conocimiento-item">
-                        <i class="fab fa-css3-alt icono"></i>
-                        <p class="tekno">CSS 3</p>
+                        <i class="fab fa-css3-alt icono" aria-label="logo css3"></i>
+                        <p class="parrafo-conocimiento">CSS 3</p>
                     </div>
                     <div class="conocimiento-item">
-                        <i class="fab fa-sass icono"></i>
-                        <p class="tekno">Sass</p>
+                        <i class="fab fa-sass icono" aria-label="logo sass"></i>
+                        <p class="parrafo-conocimiento">Sass</p>
                     </div>
                     <div class="conocimiento-item">
-                        <i class="fab fa-js icono"></i>
-                        <p class="tekno">JavaScript</p>
+                        <i class="fab fa-js icono" aria-label="logo javascript"></i>
+                        <p class="parrafo-conocimiento">JavaScript</p>
                     </div>
                     <div class="conocimiento-item">
-                        <i class="fab fa-react icono"></i>
-                        <p class="tekno">React</p>
+                        <i class="fab fa-react icono" aria-label="logo react"></i>
+                        <p class="parrafo-conocimiento">React</p>
                     </div>
                     <div class="conocimiento-item">
-                        <i class="fab fa-git-alt icono"></i>
-                        <p class="tekno">GIT</p>
+                        <i class="fab fa-git-alt icono" aria-label="logo git"></i>
+                        <p class="parrafo-conocimiento">GIT</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Final Mis Conocimientos-->
 
+
         <!-- Seccion Cita-->
 
-        <section class="conteiner">
+        <section class="contenedor-cita">
 
             <div class="conocimientos-seccion">
 
                 <i class="fas fa-quote-right quote-icon"></i>
 
                 <blockquote>
-                    <p class="descripcion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius aut
-                        reiciendis provident, qui
-                        fugit nisi veritatis ex a deleniti illum rerum, harum minus nesciunt.</p>
-
-
+                    <p class="descripcion-parrafo">El ser humano debe ser capaz de cambiar pañales, planear una
+                        invasión, sacrificar un cerdo, gobernar un barco, diseñar un edificio, escribir un soneto,
+                        reducir una fractura, consolar a los moribundos, recibir órdenes, dar órdenes, resolver
+                        ecuaciones, abonar la tierra, programar una computadora, cocinar una comida
+                        sabrosa, combatir con eficacia, morir con gallardía. La especialización es para los insectos.
+                    </p>
                 </blockquote>
 
-                <h2 class="autorx">Lorem ipsum</h2>
+                <h2 class="autorx">Robert Heinlein</h2>
 
             </div>
-
         </section>
         <!-- Final cita -->
+
 
         <!-- Seccion Mis Proyectos -->
 
         <section class="seccion-proyectos">
 
-            <div class="avergabriel">
+            <div class="contenedor-proyectos">
 
                 <div class="caja-proyectos">
 
                     <h2 id="projects" class="descripcion-titulo">Mis proyectos</h2>
 
-                    <p class="descripcion-parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, dolor.
+                    <p class="descripcion-parrafo">Acá podes ver el reflejo de mis conocimientos:  
                     </p>
 
                 </div>
@@ -168,38 +172,39 @@
 
                 <div class="cajas proyectos">
 
+
                     <a href="#" target="_blank">
-                        <img src="fonndo.svg" class="imagen-proyecto">
+                        <img src="fonndo.svg" class="imagen-proyecto" alt="Imagen del Portfolio">
                         <p>Portfolio</p>
                     </a>
 
                     <a href="#" target="_blank">
-                        <img src="meme.svg" class="imagen-proyecto">
+                        <img src="meme.svg" class="imagen-proyecto" alt="Proyecto Generador de memes">
                         <p>Generador de memes</p>
                     </a>
 
                     <a href="#" target="_blank">
-                        <img src="match3.svg" class="imagen-proyecto">
+                        <img src="match3.svg" class="imagen-proyecto" alt="Proyecto Match 3">
                         <p>Match 3</p>
                     </a>
 
                     <a href="#" target="_blank">
-                        <img src="money.svg" class="imagen-proyecto">
+                        <img src="money.svg" class="imagen-proyecto" alt="Proyecto Controlador de gastos">
                         <p>Controlador de gastos</p>
                     </a>
 
                     <a href="#" target="_blank">
-                        <img src="calendar.svg" class="imagen-proyecto">
+                        <img src="calendar.svg" class="imagen-proyecto" alt="Proyecto Administrador de reuniones">
                         <p>Administrador de reuniones</p>
                     </a>
 
                     <a href="#" target="_blank">
-                        <img src="app.svg" class="imagen-proyecto">
+                        <img src="app.svg" class="imagen-proyecto" alt="Proyecto todo app">
                         <p>Todo app</p>
                     </a>
 
                     <a href="#" target="_blank">
-                        <img src="film.svg" class="imagen-proyecto">
+                        <img src="film.svg" class="imagen-proyecto" alt="Proyecto buscador de peliculas">
                         <p>Buscador de películas</p>
                     </a>
 
@@ -210,21 +215,17 @@
         </section>
         <!--Final Seccion Mis Proyectos -->
 
+
         <!-- Seccion Contactame -->
 
         <section class="contenedor">
             <div class="contenedor-contacto">
 
                 <section class="seccion-contactame">
-                    <div class="contactame">
+                    <div class="contactame-caja">
 
                         <h2 id="contact">Contactame</h2>
-                        <p class="parrafo-contacto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
-                            nobis voluptatum tenetur!
-                            Id,
-                            nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam, tempora
-                            eaque
-                            numquam eligendi.</p>
+                        <p class="parrafo-contacto">Si te interesa mi trabajo, podes contactarme por las siguientes redes:</p>
 
                     </div>
                     <div class="contenedor-lista-contacto">
@@ -232,26 +233,26 @@
 
                             <li class="contacto-redes">
                                 <a href="https://github.com/SmeraldaKa0s" class="contacto-icon" target="_blank">
-                                    <i class="fab fa-github-alt icon"></i>
+                                    <i class="fab fa-github-alt icon" alt="icono github"></i>
                                     SmeraldaKa0s
                                 </a>
                             </li>
                             <li class="contacto-redes">
                                 <a href="https://www.linkedin.com/" class="contacto-icon" target="_blank">
-                                    <i class="fab fa-linkedin-in icon"></i>
+                                    <i class="fab fa-linkedin-in icon" alt="icono linkedin"></i>
                                     AlxSva
                                 </a>
                             </li>
                             <li class="contacto-redes">
                                 <a href="https://www.instagram.com/alexa.sera.bruxa/" class="contacto-icon"
                                     target="_blank">
-                                    <i class="fab fa-instagram icon"></i>
+                                    <i class="fab fa-instagram icon" alt="icono instagram"></i>
                                     alexa.sera.bruxa
                                 </a>
                             </li>
                             <li class="contacto-redes">
                                 <a href="#" class="contacto-icon" target="_blank">
-                                    <i class="fas fa-envelope icon"></i>
+                                    <i class="fas fa-envelope icon" alt="icono email"></i>
                                     alexa.incipit@gmail.com
                                 </a>
                             </li>
@@ -260,7 +261,7 @@
                         </ul>
                     </div>
                 </section>
-                <!-- Fin Seccion Contactame -->
+                <!-- Final Seccion Contactame -->
 
                 <!-- Seccion Escribime -->
 
@@ -273,13 +274,13 @@
                                 <div class="item-formulario">
                                     <label>Nombre*
                                         <input type="text" name="Nombre" required="required"
-                                            placeholder="p. ej.:Poison">
+                                            placeholder="p. ej.:Poison" aria-label="Escribí tu nombre acá">
                                     </label>
                                 </div>
                                 <div class="item-formulario">
                                     <label>Apellido*
                                         <input type="text" name="Apellido" required="required"
-                                            placeholder="p. ej.: Ivy">
+                                            placeholder="p. ej.: Ivy" aria-label="Escribí tu apellido acá" >
                                     </label>
                                 </div>
                             </div>
@@ -289,7 +290,7 @@
                                     <label>
                                         <p>Email*</p>
                                         <input type="email" name="Email" required="required"
-                                            placeholder="p. ej.:poison.ivy@gmail.com">
+                                            placeholder="p. ej.:poison.ivy@gmail.com" aria-label="Escribí tu email acá" >
                                     </label>
                                 </div>
                             </div>
@@ -297,7 +298,7 @@
                             <label>
                                 <p>Mensaje*</p>
                                 <textarea cols="30" rows="10" name="Mensaje" required="required"
-                                    placeholder="Escriba un mensaje aquí"></textarea>
+                                    placeholder="Escriba un mensaje aquí" aria-label="Escribí tu mensaje acá"></textarea>
 
                                 <button type="submit" name="Enviar" class="send-form cta">Enviar</button>
                             </label>
@@ -313,54 +314,55 @@
     </main>
     <!--Final Seccion Escribime -->
 
-    <!-- Comienzo Seccion Escribime -->
+    <!-- Comienzo Footer-->
     <footer class="footer-navbar">
         <nav class="contenedor-navbar">
-            <ul class="algo">
+            <ul class="caja-lista">
                 <li class="contenedor-navbar">
-                    <a class="algo" href="#about">SOBRE MÍ</a>
-                    </li>
+                    <a class="caja-lista" href="#about">SOBRE MÍ</a>
+                </li>
                 <li class="contenedor-navbar">
-                    <a class="algo" href="#skills">CONOCIMIENTOS</a>
-                    </li>
-                <li  class="contenedor-navbar">
-                    <a class="algo" href="#projects">PROYECTOS</a>
-                    </li>
+                    <a class="caja-lista" href="#skills">CONOCIMIENTOS</a>
+                </li>
                 <li class="contenedor-navbar">
-                    <a class="algo" href="#contact">CONTACTO</a>
-                    </li>
+                    <a class="caja-lista" href="#projects">PROYECTOS</a>
+                </li>
+                <li class="contenedor-navbar">
+                    <a class="caja-lista" href="#contact">CONTACTO</a>
+                </li>
             </ul>
         </nav>
 
         <ul class="footer-social-links">
 
-            <li class="contenedor-icon" >
+            <li class="contenedor-icon">
                 <a class="footer-link" href="https://github.com/SmeraldaKa0s">
-                    <i class="fab fa-github-alt icon footer-icon"></i>
+                    <i class="fab fa-github-alt icon footer-icon" aria-label="icono github"></i>
                 </a>
             </li>
             <li class="contenedor-icon">
-                <a  class="footer-link" href="https://www.linkedin.com/">
-                    <i class="fab fa-linkedin-in icon footer-icon"></i>
+                <a class="footer-link" href="https://www.linkedin.com/">
+                    <i class="fab fa-linkedin-in icon footer-icon" aria-label="icono linkedin"></i>
 
                 </a>
             </li>
             <li class="contenedor-icon">
-                <a  class="footer-link" href="https://www.instagram.com/alexa.sera.bruxa/">
-                    <i class="fab fa-instagram icon footer-icon"></i>
+                <a class="footer-link" href="https://www.instagram.com/alexa.sera.bruxa/">
+                    <i class="fab fa-instagram icon footer-icon" aria-label="icono instagram"></i>
                 </a>
             </li>
             <li class="contenedor-icon">
-                <a  class="footer-link" href="#">
-                    <i class="fas fa-envelope icon footer-icon"></i>
+                <a class="footer-link" href="#">
+                    <i class="fas fa-envelope icon footer-icon" aria-label="icono email"></i>
                 </a>
             </li>
 
         </ul>
 
-        <p class="signature">Hecho por Alx</p>
+        <p class="signature">Hecho por Alexandra</p>
 
     </footer>
+    <!-- Final Footer-->
 
 </body>
 
