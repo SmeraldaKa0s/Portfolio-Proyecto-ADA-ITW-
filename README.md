@@ -12,7 +12,7 @@ donde demuestro el recorrido y primeros pasos en este multiverso de la programac
 
 **2.Criterios básicos de Accesibilidad**
 
-<p align="center"> <a href="https://smeraldaka0s.github.io/Prototipo-de-portfolio2/" target="_blank"> <b>Para ver mi portfolio hace click acá</b></a> </p>
+<p align="center"> <a href="https://smeraldaka0s.github.io/Portfolio-Proyecto-ADA-ITW-/" target="_blank"> <b>Para ver mi portfolio hace click acá</b></a> </p>
 
 <br>
 <br>
