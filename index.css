@@ -71,6 +71,7 @@ p::selection {
 .list {
   display: flex;
   justify-content: space-between;
+  /* no veo la necesidad de agregar un width fijo aqui */
   width: 640px;
 }
 
@@ -135,6 +136,7 @@ p::selection {
 }
 
 .boton-sobre-mi {
+  /* si este elemento ya tiene la clase cta, es innecesario este color aqui */
   background-color: var(--primario);
   width: 150px;
   border-radius: 160px;
@@ -220,6 +222,7 @@ p::selection {
   margin-top: 40px;
 }
 
+/* existe la clase conocimientos-item, por que usas este selector aqui? */
 .conocimientos div {
   display: flex;
   flex-direction: column;
@@ -388,6 +391,7 @@ p::selection {
   justify-content: center;
   align-items: center;
   font-size: 23px;
+  /* innecesario */
   text-align: center;
   line-height: 32px;
   width: 50px;
